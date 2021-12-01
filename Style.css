@@ -19,8 +19,8 @@ p.Receipe{
     }
 div.body2{
     background-color: white;
-    margin: -40px 10% 60px 10%;
-    padding: 20px;
+    margin: -40px 5px 60px 5px;
+    padding: 10px;
     box-shadow: 0px 0px 10px 10px rgb(70, 64, 64);
     }
 h1{
@@ -42,8 +42,14 @@ div.Info{
     position: relative;
         }
 table.Info{
-    position: absolute; bottom:0; background-color: #6C829DC0; width: 100%; text-align: center; max-width: 100%;
+    position: absolute; bottom:0; background-color: #6C829DC0; width: 100%; text-align: center; max-width: 100%;height: 50px;
         }
+table.Info th{
+        font-size: 14px;
+            }
+table.Info td{
+        font-size: 12px;
+            }
 
 img.Info{
     display: block;
@@ -54,7 +60,7 @@ img.Info{
         }
 
 div.col{
-        width: 45%;
+        width: 100%;
         margin-top: 5px;
         }
 h2{
@@ -66,9 +72,9 @@ h2{
 div.col1{
     display: inline-block;
         }
-div.col2{
-    float: right;
-    }
+/*div.col2{
+    float: right; 
+    }*/
 div.ing p{
     border: solid 1px lightgray;
     margin: 1%;
@@ -104,12 +110,41 @@ table.inst td.data{
                 padding-bottom: 5px;
                 }
 
-
-*{
-    overflow: auto;
+/* Desktop screen only */
+@media only screen and (min-width: 768px){
+    div.body2{
+        margin: -40px 10% 60px 10%;
+        padding: 20px;
+        }
+    table.Info{
+            position: absolute; bottom:0; background-color: #6C829DC0; width: 100%; text-align: center; max-width: 100%;height: 80px;
+            }
+    table.Info th{
+            font-size: 18px;
+                }
+    table.Info td{
+            font-size: 16px;
+                }
+    div.col{
+            width: 45%;
+            margin-top: 5px;
+            }
+    div.col1{
+            display: inline-block;
+            }
+    div.col2{
+            float: right;
+            }
 }
 
-
+/* For very large screen */
+@media only screen and (min-width: 900px){
+    div.body2{
+        margin-left: auto;
+        margin-right: auto;
+        width:700px;
+            }   
+}
 
 
 
